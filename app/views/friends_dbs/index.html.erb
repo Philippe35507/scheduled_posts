@@ -1,0 +1,29 @@
+<table class = "table">
+  <tbody>
+     <% @friends_dbs.each do |friends_db| %>
+    <tr>
+      <td>
+        <%= friends_db.first_name %>
+      </td>
+      <td>
+        <%= friends_db.last_name %>
+      </td>
+      <td>
+        <%= friends_db.email %>
+      </td>
+      <td>
+        <%= friends_db.phone %>
+      </td>
+       <td>
+        <%= friends_db.tweeter %>
+      </td>
+      <td>
+      <%= link_to "Show this friend", friends_db, class:"btn btn-secondary" %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+<%= link_to "Adding New friend", new_friends_db_path %>

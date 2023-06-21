@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @friends_db %>
+
+<div>
+  <%= link_to "Edit this friends db", edit_friends_db_path(@friends_db) %> |
+  <%= link_to "Back to friends dbs", friends_dbs_path %>
+
+  <%= button_to "Destroy this friends db", @friends_db, method: :delete %>
+</div>

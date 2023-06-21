@@ -1,0 +1,2 @@
+class FriendsDb < ApplicationRecord
+end
